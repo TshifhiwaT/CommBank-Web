@@ -96,7 +96,7 @@ export function GoalManager(props: Props) {
 
     dispatch(updateGoalRedux(updatedGoal))
 
-    // TODO(TASK-3) Update database
+    updateGoalApi(props.goal.id, updatedGoal)
   }
 
   return (
